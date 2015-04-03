@@ -1,2 +1,4 @@
 # vagrant-seed
-seed for puppet and vagrant for dev vm
+seed for angular app
+
+Installs yeoman, webapp generator, sass and compass
