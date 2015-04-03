@@ -53,6 +53,12 @@ class must-have {
     require => Exec["install yeoman"],
   }
 
+  exec { 'install angular requirejs generator':
+    command => '/usr/bin/npm install -g generator-angular-require',
+    creates => '/usr/lib/node_modules/generator-angular-require',
+    require => Exec["install yeoman"],
+  }
+
   file { "/home/vagrant/yeoman/webapp":
       ensure => "directory",
       require => Exec['install webapp generator'],
