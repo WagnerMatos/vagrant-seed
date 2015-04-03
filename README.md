@@ -33,3 +33,9 @@ How to use:
 
 You will find `yeoman/webapp` folder in your vm. This is the synced folder. You can now work locally in your `your_project/webapp` folder.
 
+
+To start a new project, you can go into the `webapp` folder and run `yo webapp-generator`.
+
+If you want to use some other generator, you can run `yo --help` to see all the available generators. The one I mostly use for my angular project is `yo angular-require`. You can install your own generator too. If you want to add some other generator thats not installed in the VM by default, you can either send a pull request or just send me a message.
+
+
