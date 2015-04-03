@@ -11,7 +11,7 @@ Vagrant.configure(VERSION) do |config|
 
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine.
-  config.vm.network :forwarded_port, host: 9000, guest: 9000
+  config.vm.network :forwarded_port, host: 9000, guest: 9000, auto_correct: true
 
   # Share an additional folder to the guest VM
   config.vm.synced_folder "../", "/home/vagrant/yeoman"
