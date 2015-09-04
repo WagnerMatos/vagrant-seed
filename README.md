@@ -5,26 +5,20 @@ Installs yeoman, webapp generator, sass and compass
 
 How to use:
 
-1. create your project folder and initialize git. 
+1. Create your project folder and initialize git. 
 
+```sh
   $ mkdir project_name
-
   $ cd project_name
-
   $ git init
-
   $ git submodule add https://github.com/adikari/vagrant-seed.git vagrant
-
   $ cd vagrant
-
   $ vagrant up 
-
   $ vagrant ssh // logs you in the vm
+  $ cd yeoman/webapp // this is the synced folder
+```
 
-  $ cd yeoman
-
-You will find `yeoman/webapp` folder in your vm. This is the synced folder. You can now work locally in your `your_project/webapp` folder.
-
+You can now work locally in your `your_project/webapp` folder in the host machine.
 
 To start a new project, you can go into the `webapp` folder and run `yo webapp-generator`.
 
